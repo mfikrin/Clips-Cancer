@@ -40,7 +40,7 @@
     (printout t "Input fitur atau kondisi (input numerik, int atau float)" crlf)
     (printout t "mean_concave_points : ")
     (bind ?inp (ask-input))
-    (assert (mean-concave-Point ?inp))
+    (assert (mean_concave_points ?inp))
     
 
     (if (> ?inp 0.05)
