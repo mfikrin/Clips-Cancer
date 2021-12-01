@@ -285,7 +285,7 @@
             (retract ?cancer) (printout t "Hasil Prediksi = Terprediksi Kanker Payudara" crlf)
     else (if (eq ?var_cancer no)
         then
-            (retract ?cancer) (printout t "Hasil Prediksi = Tidak Terprediksi Kanker Payudara" crlf)
+            (retract ?cancer) (printout t "Hasil Prediksi = Terprediksi Tidak Kanker Payudara" crlf)
         )
     )
 
