@@ -217,6 +217,7 @@
     (retract ?condition ?prev)
     (printout t "worst_concave_points : ")
     (bind ?inp (ask-input))
+    (assert (worst_concave_points ?inp))
     
     
     (if (<= ?inp 0.17)
@@ -253,6 +254,7 @@
     (retract ?condition)
     (printout t "mean_radius : ")
     (bind ?inp (ask-input))
+    (assert (mean_radius ?inp))
      
     (if (eq ?var_prev perimeter_error)
         then
@@ -294,7 +296,7 @@
         then (assert (phase start))
     
     else
-        then (printout t "Terima kasih telah menggunakan aplikasi kami." crlf)
+        then (printout t "Terima kasih telah menggunakan program kami." crlf)
     )
 )
 
